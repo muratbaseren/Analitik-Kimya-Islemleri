@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-9"?>
+<Main>
+  <Row d2p1:rowID="" xmlns:d2p1="0">
+    <PropertyName>Tablo1</PropertyName>
+    <DataType>String</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="1">
+    <PropertyName>Tablo2</PropertyName>
+    <DataType>String</DataType>
+  </Row>
+</Main>

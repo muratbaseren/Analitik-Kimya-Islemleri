@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-9"?>
+<Main>
+  <Row d2p1:rowID="" xmlns:d2p1="0">
+    <PropertyName>MyTabPageAyarlari</PropertyName>
+    <DataType>MyTabPageAyarlari</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="1">
+    <PropertyName>DatabaseAyarlari</PropertyName>
+    <DataType>DatabaseAyarlari</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="2">
+    <PropertyName>CrystalReportAyarlari</PropertyName>
+    <DataType>CrystalReportAyarlari</DataType>
+  </Row>
+</Main>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Page-1" NameU="Page-1">
+			<Layer IX="0">
+				<Name>Flowchart</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{F8B47544-8FE1-48DF-8F70-58A8A7AFF412}" Name="Note box file" NameU="Note box file" Master="3">
+					<Text>Amaç
+
+Kullanıcının yaptığı titrasyon bilgilerinin girilerek titrasyon hesabının yapılması ve 
+sonuçların kullanıcıya gösterilerek grafikli rapor dosyasının oluşturulması..
+
+Görevler
+
+Kullanıcıdan verilerin alınması
+Hesaplamaların yapılması
+Yapılan hesaplamada düzenleme yapılabilmesi
+Verilerin ve düzenlenmiş değerlerin kaydedilmesi ve geri yüklenmesi
+Rapor Sayfası Oluşturulması</Text>
+					<XForm>
+						<PinX Unit="MM">4.133858267716535</PinX>
+						<PinY Unit="MM">5.807086614173224</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="4" Name="Page-2" NameU="Page-2">
+			<Shapes>
+				<Shape ID="1" UniqueID="{B382E270-3F63-4860-9118-45E26ED3FBB4}" Name="Note box file.8" NameU="Note box file.8" Master="3">
+					<Text>Kullacıdan Alınacak Veriler
+
+Titrasyon Başlığı
+
+Titrant Derişimi(M)
+Titrant Hacmi(ml)
+Titrant Türü(Asit-Baz)
+
+Titre Edilen Derişimi(M)
+Titre Edilen Hacmi(ml)
+Titre Edilen Türü(Asit-Baz)
+
+Tesir Değeri
+Titrasyon Artış
+
+Arayüz Bilgilendirme
+
+--Kullanıcı istediği kadar titrasyonu tek arayüzde yapabilir.
+--Titrasyon verileri TabControl’de TabPage içerisinde inşa edilir.
+--Yapılan titrasyon hesaplamaları ListView’da görüntülenir. Hesaplama yapıldıktan sonra 
+düzenleme yapılabilir.(ListView’daki değerleri değiştirebilecek mini arayüz vardır.)
+--Tirasyon verilerinden oluşacak rapor CrystalReportViewer ‘da gösterilir. CrystalReportViewer,
+TabPage içinde yer almaz. Seçilen TabPage’e göre rapor oluşturulur.</Text>
+					<XForm>
+						<PinX Unit="MM">4.133858267716535</PinX>
+						<PinY Unit="MM">5.807086614173227</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="5" Name="Page-3" NameU="Page-3">
+			<Shapes>
+				<Shape ID="1" UniqueID="{890BEDF9-4416-49EC-927F-8A89314CE730}" Name="Note box file" NameU="Note box file" Master="3">
+					<Text>Strateji
+
+**TabPage**
+
+--Verilerin girileceği ve TabPagele ilişkilendirilecek kotroller Panel içinde UserControl olarak 
+oluşturulmalı.(myTabPagePanel)
+
+--Gerekli PublicEvent’ ler yazılmalı.
+
+--Interface kullanılabilir.
+
+--TabPage ‘e Property iliştirilmeli. Bu Property’ler Kullanıcıdan alınan verileri yazdığı 
+kontroller olmalı.(Kontrollere ulaşımın kolay ve basit olması, devamlı tüm kontroller için 
+döngü yaratılmaması ve kontrol isimleri ile uğraşılmaması açısından kolaylık sağlamaktadır.)
+
+--CrytalReport instance’ ını içeren bir property olmalı.(TabPage’ ler arasında gezerken tekrar 
+tekrar Database işlemleri yapılmamalı ve rapor hemen CrystalReportViewer ‘da gösterilmelidir.)
+
+--Database’ de verilerin yazıldığı Tablo isimlerini içeren birer property olmalıdır.(Verilerde 
+düzenleme yapılırsa CrystalReport Database’den tekrar rapor oluşturacaktır. Bu nedenle Tablo 
+isimleri iliştirilmelidir.)
+</Text>
+					<XForm>
+						<PinX Unit="MM">4.133858267716535</PinX>
+						<PinY Unit="MM">5.807086614173229</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="6" Name="Page-4" NameU="Page-4">
+			<Shapes>
+				<Shape ID="1" UniqueID="{2BBB89C0-82C0-480E-AB8A-464095207A30}" Name="Note box file" NameU="Note box file" Master="3">
+					<Text>Strateji
+
+**Save - Load**
+
+--Kullanıcı Save yaptığında girdiği verileri ve ListView içeriği olduğu gibi XML olarak kaydedilir.
+
+--Kullacı Load yaptığında veriler XML ‘den okunarak gerekli kontrollere aktarılır.
+
+**Database**
+
+--Hesaplanan veriler için ayrı bir tablo , tablo başlığı gibi tek satırlık veriler için ayrı tablo 
+kullanılmalıdır.
+
+--Hesaplanan verilerin inşa edileceği tablo içeriği; (Tablo_&lt;TabPageIndex&gt;_1)     
+	ID  int PRIMARY KEY unique,
+     	TitrantHacmi real,
+     	TitreEdilenHacmi real,
+     	AsitDerisim real,
+     	ph real
+
+--Tek satırlık verilerin inşa edileceği tablo içeriği; (Tablo_&lt;TabPageIndex&gt;_2)
+     	ID  int PRIMARY KEY unique,
+     	TitrantIsmi char(20),
+	TitrantDerişimi char(20),
+	TitrantHacmi char(20),
+	TitrantTuru char(5),
+     	TitreEdilenIsmi char(20),
+	TitreEdilenDerişimi char(20),
+	TitreEdilenHacmi char(20),
+	TitreEdilenTuru char(5),
+     	RaporBasligi char(50),
+     	DipNot char(180),
+     	TesirDegeri int,
+	Artis real</Text>
+					<XForm>
+						<PinX Unit="MM">4.133858267716535</PinX>
+						<PinY Unit="MM">5.807086614173231</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-9"?>
+<Main>
+  <Row d2p1:rowID="" xmlns:d2p1="0">
+    <PropertyName>TitrantIsmi</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="1">
+    <PropertyName>TitrantDerisimi</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="2">
+    <PropertyName>TitrantHacmi</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="3">
+    <PropertyName>TitrantTuru</PropertyName>
+    <DataType>MaddeTuru</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="4">
+    <PropertyName>TitreEdilenIsmi</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="5">
+    <PropertyName>TitreEdilenDerisimi</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="6">
+    <PropertyName>TitreEdilenHacmi</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="7">
+    <PropertyName>TitreEdilenTuru</PropertyName>
+    <DataType>MaddeTuru</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="8">
+    <PropertyName>RaporBasligi</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="9">
+    <PropertyName>DipNot</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="10">
+    <PropertyName>Imza</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="11">
+    <PropertyName>TesirDegeri</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="12">
+    <PropertyName>Artis</PropertyName>
+    <DataType>Textbox</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="13">
+    <PropertyName>İmports</PropertyName>
+    <DataType>System</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="14">
+    <PropertyName>İmports</PropertyName>
+    <DataType>System.windows</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="15">
+    <PropertyName>İmports</PropertyName>
+    <DataType>System.windows.forms</DataType>
+  </Row>
+</Main>

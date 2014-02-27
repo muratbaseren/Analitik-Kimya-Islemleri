@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-9"?>
+<Main>
+  <Row d2p1:rowID="" xmlns:d2p1="0">
+    <PropertyName>RaporInstance</PropertyName>
+    <DataType>CrystalReport2</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="1">
+    <PropertyName>Imports</PropertyName>
+    <DataType>CrystalDecisions.CrystalReports.Engine</DataType>
+  </Row>
+  <Row d2p1:rowID="" xmlns:d2p1="2">
+    <PropertyName>Imports</PropertyName>
+    <DataType>CrystalDecisions.Shared</DataType>
+  </Row>
+</Main>
